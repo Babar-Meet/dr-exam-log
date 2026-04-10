@@ -1,0 +1,30 @@
+{
+  "name": "dr-state-logger",
+  "version": "0.1.0",
+  "description": "Cross-platform active-window state transition logger for exam monitoring",
+  "type": "module",
+  "bin": "bin/dr-state-logger.js",
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node ./bin/dr-state-logger.js",
+    "check": "node ./bin/dr-state-logger.js --help"
+  },
+  "keywords": [
+    "state-logger",
+    "exam-proctoring",
+    "active-window",
+    "npx"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "active-win": "^9.0.0"
+  }
+}
