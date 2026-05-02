@@ -1,9 +1,9 @@
 {
-  "name": "dr-state-logger",
+  "name": "dr-exam-log",
   "version": "0.1.0",
   "description": "Cross-platform active-window state transition logger for exam monitoring",
   "type": "module",
-  "bin": "bin/dr-state-logger.js",
+  "bin": "bin/dr-exam-log.js",
   "files": [
     "bin",
     "src",
@@ -11,11 +11,11 @@
     "LICENSE"
   ],
   "scripts": {
-    "start": "node ./bin/dr-state-logger.js",
-    "check": "node ./bin/dr-state-logger.js --help"
+    "start": "node ./bin/dr-exam-log.js",
+    "check": "node ./bin/dr-exam-log.js --help"
   },
   "keywords": [
-    "state-logger",
+    "exam-log",
     "exam-proctoring",
     "active-window",
     "npx"

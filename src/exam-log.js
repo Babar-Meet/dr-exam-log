@@ -485,7 +485,7 @@ function resolveState(windowInfo, options = {}) {
 
 function resolveDownloadsDir() {
   const home = os.homedir();
-  const fromEnv = String(process.env.DR_STATE_LOGGER_OUTPUT_DIR ?? "").trim();
+  const fromEnv = String(process.env.DR_EXAM_LOG_OUTPUT_DIR ?? "").trim();
   if (fromEnv) {
     return path.resolve(fromEnv);
   }
@@ -560,7 +560,7 @@ export class StateTransitionLogger {
   }
 }
 
-export async function runStateLogger(options = {}) {
+export async function runExamLog(options = {}) {
   const intervalSeconds = Math.max(0.2, Number(options.intervalSeconds ?? 1));
   const logger = new StateTransitionLogger(options.outputPath);
 
