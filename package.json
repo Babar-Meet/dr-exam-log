@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "Cross-platform active-window state transition logger for exam monitoring",
   "type": "module",
-  "bin": "bin/dr-exam-log.js",
+  "bin": {
+    "dr-exam-log": "bin/dr-exam-log.js"
+  },
   "files": [
     "bin",
     "src",
